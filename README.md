@@ -2,7 +2,7 @@
 
 Beezy is a hybrid DNA storage architecture for strand order recovery. It combines sequence-derived tree ranks with short strand headers and a separately stored digital tree seed. The decoder uses this seed to recover strand order before reconstructing the source file. Error correction combines constrained trellis coding, Log-MAP BCJR decoding, and vertical Reed–Solomon coding.
 
-The repository includes the codec, in vitro sequencing tools, a file recovery example, and evaluation functions. [中文说明](README.zh-CN.md)
+The repository includes the codec, in vitro sequencing tools, a file recovery example, and evaluation functions.
 
 ## Installation
 
