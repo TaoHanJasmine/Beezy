@@ -1,0 +1,2 @@
+Beezy stores encoded data in DNA and keeps a digital tree seed for strand order recovery.
+This small example checks encoding, simulated sequencing, decoding, and exact file recovery.

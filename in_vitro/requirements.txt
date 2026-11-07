@@ -1,0 +1,2 @@
+cutadapt==5.2
+dnaio==1.2.4

@@ -1,0 +1,26 @@
+# Python and optional extension build products
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+ecc/_bcjr_cython.c
+ecc/_bcjr_cython*.so
+ecc/_bcjr_cython*.pyd
+
+# Generated example outputs and local environments
+.example-output/
+/runs/
+.venv/
+venv/
+.env
+.env.*
+
+# Editor and local automation state
+.vscode/
+.idea/
+.codex/
+.agents/
+AGENTS.md
+.DS_Store

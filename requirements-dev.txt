@@ -1,0 +1,4 @@
+-r requirements.txt
+Cython==3.2.9
+setuptools==83.0.0
+pytest==9.1.1

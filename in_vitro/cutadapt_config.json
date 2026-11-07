@@ -1,0 +1,8 @@
+{
+  "merged_input": "../runs/in_vitro/merged.fastq",
+  "output_directory": "../runs/in_vitro/trimmed",
+  "left_boundary": "TTCTGAGCGAATAGGAGTCCTCGCACCAGCGTGT",
+  "right_boundary": "CACTGCGGCTCCTCA",
+  "max_error_rate": 0.1,
+  "threads": 8
+}
