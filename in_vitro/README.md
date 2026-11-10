@@ -9,6 +9,18 @@ The workflow uses fastp 0.24.0 to merge paired reads and Cutadapt 5.2 to remove 
 
 ## Input data
 
+The original image encoded for the experiment is [tju.bmp](tju.bmp), a 435 × 552 pixel BMP file of 960,534 bytes. Its SHA-256 checksum matches the source image recorded in the experiment's encoding manifest:
+
+```text
+8e1a8cab9e33cb2d1b5a3ff369bdc12ee807ae065149321483d34117d57887da
+```
+
+Use this file as the reference when evaluating recovery. From the repository root, replace `RECOVERED_BMP` with the path to the decoded BMP file:
+
+```bash
+"$BEEZY_PYTHON" main.py evaluate --original in_vitro/tju.bmp --recovered "$RECOVERED_BMP"
+```
+
 Download the paired FASTQ files from [Beezy in vitro sequencing data](https://doi.org/10.6084/m9.figshare.34700607.v1). Each mate file contains the same set of read pairs.
 
 | Mate | File | MD5 |

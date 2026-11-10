@@ -1,7 +1,6 @@
 """Byte/DNA conversion and optional position-dependent whitening."""
 
 import hashlib
-import os
 from pathlib import Path
 
 
@@ -157,23 +156,3 @@ __all__ = [
     "dna_sequences_to_bytes",
     "encode_file_to_dna",
 ]
-
-
-if __name__ == "__main__":
-    input_bmp = Path(__file__).with_name("fixtures") / "test_file.bmp"
-    output_bmp = "restored_image.bmp"
-    payload_length = 100
-    if os.path.exists(input_bmp):
-        dna_sequences, original_size = encode_file_to_dna(
-            input_bmp,
-            payload_length,
-        )
-        print(
-            "编码完成！共生成 "
-            f"{len(dna_sequences)} 条 payload 长度为 "
-            f"{payload_length} 的序列。"
-        )
-        print(f"原始文件大小: {original_size} 字节")
-        decode_dna_to_file(dna_sequences, original_size, output_bmp)
-    else:
-        print(f"错误：找不到文件 {input_bmp}，请检查文件名。")

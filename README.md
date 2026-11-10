@@ -83,6 +83,8 @@ Set `--substitution`, `--deletion`, and `--insertion` to the applicable BCJR cha
 
 ## In vitro sequencing
 
+The original BMP image encoded for the experiment is included as [in_vitro/tju.bmp](in_vitro/tju.bmp). Use it as the reference file when checking the recovered image. Its size and SHA-256 checksum are listed in the [in vitro documentation](in_vitro/README.md#input-data).
+
 Raw paired-end sequencing data are available on [figshare](https://doi.org/10.6084/m9.figshare.34700607.v1).
 
 [in_vitro/](in_vitro/README.md) contains two processing steps:
